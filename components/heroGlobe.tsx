@@ -16,7 +16,7 @@ export function HeroGlobe() {
           textAlign: "center"
         }} 
         className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Grow Engagement with Apigee Portals
+        Expand your Universe with Apigee Portals
       </span>
 
       <Globe className="top-55 opacity-90" />
