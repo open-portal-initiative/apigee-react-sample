@@ -1,5 +1,6 @@
 import { PortalService } from "apigee-portal-module";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import Image from 'next/image'
 import { type ApiHubApiVersion } from "apigee-portal-module";
 import Header from "@/components/header";
 
@@ -33,13 +34,6 @@ export default async function ApiVersion({
     console.log("Apigee get API version error: " + JSON.stringify(apigeeApiVersionResult[1]));
   }
 
-  // const getIdFromName = (name: string) => {
-  //   let result = "";
-  //   const pieces = name.split("/");
-  //   if (pieces.length > 0) result = pieces[pieces.length - 1];
-  //   return result;
-  // }
-
   return (
     <div className="flex flex-col" style={{
       width: "100%"
@@ -66,7 +60,13 @@ export default async function ApiVersion({
             </a>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex pt-[6px]">
-            <img className="rounded-md shadow-md" src="https://picsum.photos/400/300" alt="mockup" />
+            {/* <img className="rounded-md shadow-md" src={"https://picsum.photos/400/300"} alt="mockup" /> */}
+            <Image
+              src="https://picsum.photos/400/300"
+              width={400}
+              height={300}
+              alt="Picture of the API"
+            />
           </div>
         </div>
       </section>
